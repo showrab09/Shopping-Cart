@@ -44,3 +44,14 @@ document.getElementById("case-minus").addEventListener("click", function () {
     updateProductNumber("case", 60, false);
     subTotal();
 });
+
+//Checkout Button Click Empty Field
+document.getElementById("succes").addEventListener("click", function () {
+    alert("Thank You for shopping with Us!!");
+    const emptyTotal = document.getElementById("sub-total");
+    emptyTotal.innerText = '0';
+    const emptyTax = document.getElementById("tax-amount");
+    emptyTax.innerText = "0";
+    const emptyPrice = document.getElementById("total-price");
+    emptyPrice.innerText = "0";
+});
